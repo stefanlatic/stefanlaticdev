@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  background-color: #0d0d0d; /* tamna pozadina */
+  color: white;
+}
+
+#tsparticles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* stavi pozadinu iza sadržaja */
+}
