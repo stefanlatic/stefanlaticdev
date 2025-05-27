@@ -4,7 +4,7 @@ const FirstProjectSection = () => {
 
     return (
         <>
-        <div className="flex px-[60px] space-x-40">
+        <section id="work"  className="flex px-[60px] space-x-40">
         <div className="ml-12">
          <img src="/evidenca-picture.png" alt="Evidenca" className="h-[500px] mb-20"></img>
          </div>
@@ -15,7 +15,7 @@ const FirstProjectSection = () => {
             <button className=" font-IBM text-3xl">Learn more</button>
         </div>
         
-         </div>
+         </section>
         </>
     )
 }
