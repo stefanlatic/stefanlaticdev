@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .animate-wiggle-2s {
+    animation: wiggle 2s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-duration: 9s; /* ukupno trajanje ciklusa */
+    animation-timing-function: steps(1, end); /* da pauzira */
+  }
+}

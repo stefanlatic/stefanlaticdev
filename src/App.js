@@ -13,26 +13,32 @@ import ParticlesBackground from './utils/ParticlesBackground';
 function App() {
   return (
     <>
-    <div>
+
       <Navigation />
     <div className="relative h-screen overflow-hidden">
       <ParticlesBackground />
-      <div className="relative z-10 px-[120px] pt-[40px]">
+      <div className="relative z-10 px-[160px] pt-[40px]">
         <WelcomeMessage />
       </div>
 
     </div>
-    <a  href="#"
-  onClick={(e) => {
-    e.preventDefault();
-    document.getElementById("work").scrollIntoView({ behavior: "smooth" });
+    <div
+  onClick={() => {
+    document.getElementById("work")?.scrollIntoView({ behavior: "smooth" });
   }}
-  className="text-white hover:text-gray-300 transition absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-      <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-      </svg>
-    </a>
-    </div>
+  className="absolute bottom-8 left-1/2 transform -translate-x-1/2 w-20 h-20 flex w-20 h-20 flex items-center justify-center animate-bounce cursor-pointer rounded-full hover:bg-white/10 transition"
+>
+  <svg
+    className="w-10 h-10 text-white pointer-events-none"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    viewBox="0 0 24 24"
+  >
+    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+  </svg>
+</div>
+
     <div>
       <FirstProjectSection /> 
     </div>
