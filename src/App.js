@@ -17,7 +17,7 @@ function App() {
       <Navigation />
     <div className="relative h-screen overflow-hidden">
       <ParticlesBackground />
-      <div className="relative z-10 px-[160px] pt-[40px]">
+      <div className="relative z-10 [@media(min-width:1000px)]:px-[240px] [@media(min-width:900px)]:px-[80px] [@media(min-width:750px)]:px-[40px] [@media(min-width:640px)]:px-[30px] [@media(min-width:480px)]:px-[20px] px-[10px] pt-[40px]">
         <WelcomeMessage />
       </div>
 
