@@ -3,8 +3,7 @@ const FirstProjectSection = () => {
     return (
         <>
         <section id="work" className="flex flex-col md:flex-row items-center px-6 md:px-[60px] space-y-10 md:space-y-0 md:space-x-40 mt-10">
-  {/* Slika */}
-  <div className="flex justify-center md:ml-12">
+   <div className="flex justify-center md:ml-12">
     <img
       src="/evidenca-picture.png"
       alt="Evidenca"
@@ -12,11 +11,10 @@ const FirstProjectSection = () => {
     />
   </div>
 
-  {/* Tekstualni deo */}
   <div className="w-full md:w-[400px] mt-10 md:mt-20 leading-[24px] sm:leading-[26px] md:leading-[28px]">
     <h1 className="text-center text-2xl sm:text-3xl font-IBM mb-6 sm:mb-10">Evidenca</h1>
     <p className="text-center font-IBM px-2 sm:px-4">
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+      A web app designed to simplify health data management. From login and charts to cleanly organized records - everything in one place! Go to Evidenca and organize your records and medicines now.
     </p>
     <button
       onClick={() => {
@@ -37,7 +35,6 @@ const FirstProjectSection = () => {
     </button>
   </div>
 </section>
-
         </>
     )
 }

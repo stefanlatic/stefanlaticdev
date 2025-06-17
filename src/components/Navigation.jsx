@@ -3,7 +3,7 @@ import { Menu, X } from "lucide-react";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
- // Zatvori meni kada se ekran poveća iznad 640px
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 640) {
@@ -15,16 +15,14 @@ const Navigation = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Funkcija za zatvaranje menija pri klikovima na linkove
   const handleLinkClick = (callback) => (e) => {
     e.preventDefault();
     setIsOpen(false);
-    callback?.(); // poziva se ako postoji funkcija scrollIntoView itd.
+    callback?.();
   };
   return (
     <>
       <nav className="relative flex font-IBM text-xl justify-end pr-12 py-10">
-      {/* Desktop meni */}
       <ul className="hidden sm:flex space-x-[64px] text-2xl">
         <a
           href="/Stefan Latić CV.pdf"
@@ -33,7 +31,6 @@ const Navigation = () => {
         >
           Resume
         </a>
-
         <a
           href="#"
           onClick={handleLinkClick(() =>
@@ -43,7 +40,6 @@ const Navigation = () => {
         >
           Work
         </a>
-
         <a
           href="#"
           onClick={handleLinkClick(() =>
@@ -57,12 +53,10 @@ const Navigation = () => {
         <p>🇷🇸</p>
       </ul>
 
-      {/* Hamburger dugme */}
       <button className="sm:hidden z-50" onClick={() => setIsOpen(!isOpen)}>
         {isOpen ? <X size={28} /> : <Menu size={28} />}
       </button>
 
-      {/* Mobilni meni */}
       {isOpen && (
         <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 bg-black/80 px-8 py-6 rounded-lg shadow-lg flex flex-col items-center space-y-4 text-white text-lg w-[90%] max-w-xs z-40">
           <a

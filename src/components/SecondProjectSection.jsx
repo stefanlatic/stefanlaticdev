@@ -1,14 +1,12 @@
-
 const SecondProjectSection = () => {
-
     return (
         <>
         <div id="second-section" className="flex flex-col-reverse md:flex-row items-center px-6 md:px-[110px] space-y-10 md:space-y-0 md:space-x-40 mt-10">
-  {/* Tekstualni deo */}
   <div className="w-full md:w-[400px] mt-10 md:mt-20 leading-[24px] sm:leading-[26px] md:leading-[28px]">
     <h1 className="text-center text-2xl sm:text-3xl font-IBM mb-6 sm:mb-10">My Library App</h1>
     <p className="text-center font-IBM px-2 sm:px-4">
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+    A simple web app where you can keep track of the books you’ve read – all in one place, your personal library.
+You can also create a wish list of books you want to read in the future!
     </p>
     <button
       onClick={() => {
@@ -29,7 +27,6 @@ const SecondProjectSection = () => {
     </button>
   </div>
 
-  {/* Slika */}
   <div className="flex justify-center md:ml-12">
     <img
       src="/mylibrary-picture.png"
@@ -38,7 +35,6 @@ const SecondProjectSection = () => {
     />
   </div>
 </div>
-
         </>
     )
 }

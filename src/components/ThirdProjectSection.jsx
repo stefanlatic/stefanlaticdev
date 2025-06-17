@@ -1,11 +1,9 @@
-
-
 const ThirdProjectSection = () => {
 
     return (
         <>
         <div className="flex flex-col md:flex-row items-center px-6 md:px-[60px] space-y-10 md:space-y-0 md:space-x-40">
-  {/* Slika */}
+
   <div className="md:ml-12 flex justify-center">
     <img
       src="/toDo-picture.png"
@@ -14,14 +12,12 @@ const ThirdProjectSection = () => {
     />
   </div>
 
-  {/* Tekstualni deo */}
   <div className="w-full md:w-[400px] mt-10 md:mt-20 leading-[24px] sm:leading-[26px] md:leading-[28px]">
     <h1 className="text-center text-2xl sm:text-3xl font-IBM mb-6 sm:mb-10">To-Do App</h1>
     <p className="text-center font-IBM px-2 sm:px-4">
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+     Practical ToDo Application for checking tasks during the day. It helps people not to forget about some tasks they have to complete. Visit app and try!
     </p>
 
-    {/* Dugme Live App */}
     <button
       onClick={() => {
         window.open("https://react-todo-app-ashy-nine.vercel.app/", "_blank");
@@ -32,7 +28,6 @@ const ThirdProjectSection = () => {
     </button>
     <br />
 
-    {/* Dugme Learn more */}
     <button
       onClick={() => {
         window.open("https://github.com/stefanlatic/react-todo-app.git", "_blank");
@@ -44,7 +39,7 @@ const ThirdProjectSection = () => {
   </div>
 </div>
 
-{/* Dodatno dugme ispod */}
+
 <div className="flex justify-center mt-10">
   <button
     onClick={() => {
